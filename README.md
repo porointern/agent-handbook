@@ -110,6 +110,16 @@ step, hand over exact artifacts and a concrete next action; keep the remaining
 states explicit. A draft or an author's sanity check is not formal approval. A
 justified decision not to land work should retain the work and its reason.
 
+For every live adoption or configuration change, follow preview → canary →
+cutover → readback → rollback. Prepare rollback before cutover; use it if
+verification fails.
+
+- Sandbox or profile changes: test the new profile in an isolated sandbox invocation.
+- Application settings: back up, preview with a dry run, apply and read back.
+- Ignore or exclude rules: dry-run every cleanup consumer first.
+- Build and test runners: retain the prior version and run one canary build.
+- Shared CI or review workflows: canary on one consumer repository before all.
+
 Release task-owned temporary processes and resources when their consumers are
 done. Before removing a checkout or artifact, reconcile ownership and retain
 unique source, unpushed commits and required evidence in a durable location.
