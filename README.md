@@ -84,6 +84,12 @@ Those records support continuity; they do not grant authority or approval.
 
 ## Hand over a role
 
+Before a manager's turn ends, give every reported open item an owner thread,
+a tracking record and a done check. Record owner-only actions as tracked
+owner-action items with a named tracking thread or role, rather than leaving
+them as requests in chat. At handoffs, use a close-out register:
+`item | owner | tracking | done when`.
+
 Check the agent host's free disk space and the orchestrator's health before a
 handoff. Save the durable brief first, switch the execution managers next and
 the outgoing coordinator last. Record a verification at each step.
