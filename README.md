@@ -44,8 +44,10 @@ one proof of the others or treat an unavailable check as a pass.
 ## Delegate execution with clear ownership
 
 When using a manager/executor arrangement, the manager delegates implementation,
-debugging and verification to scoped executors, even when only one runs. The
-manager remains responsible for intent, integration and delivery. Give the
+debugging, verification and multi-step investigations to scoped executors, even
+when only one runs. The manager remains responsible for intent, integration and
+delivery. Prefer a cheaper delegated model when it can meet the acceptance
+criteria, and keep manager turns short enough to stay responsive. Give the
 executor the acceptance criteria, allowed files, relevant context, constraints
 and expected return artifacts. Select an authorized provider, model and options
 for the work, and record the effective selection rather than assuming it.
@@ -60,6 +62,9 @@ For example, a documentation change and an isolated parser fix can run together
 with separate file ownership. Two changes to the same parser need coordination.
 Prefer finishing landable work over accumulating speculative drafts.
 
+Steer corrections into running work. A scope or safety amendment queued behind
+the current turn cannot constrain that turn; verify the executor received it.
+
 ## Preserve context and unfinished work
 
 Keep reviewed instructions, task context, checkpoints and evidence in deliberate,
@@ -67,13 +72,29 @@ project-owned records. A useful handoff names the exact source revision, work
 done, checks actually run, unresolved questions, retained artifacts and the next
 responsible owner. On interruption or takeover, reconcile live tasks and preserve
 dirty files and unpublished commits before assuming the work is free to replace.
+Copy volatile evidence to durable storage promptly, before a restart can erase it.
 
 poroburu's policy is to keep Claude and Codex automatic memory off. Verify the
-effective settings through the project's existing adoption work. An empty memory
-store does not prove that memory is disabled; a merged migration tool does not
-prove installation. Disabling automatic memory does not mean deleting ordinary
-task context, reviewed instructions, checkpoints or evidence. Those records
-support continuity; they do not grant authority or approval.
+effective settings through the project's existing adoption work. Use a behavioral
+probe with a positive control that shows the probe can detect enabled behavior.
+An empty memory store does not prove that memory is disabled; a merged migration
+tool does not prove installation. Disabling automatic memory does not mean
+deleting ordinary task context, reviewed instructions, checkpoints or evidence.
+Those records support continuity; they do not grant authority or approval.
+
+## Hand over a role
+
+Check the agent host's free disk space and the orchestrator's health before a
+handoff. Save the durable brief first, switch the execution managers next and
+the outgoing coordinator last. Record a verification at each step.
+
+Before changing a thread's configuration, ensure it has no running or queued
+runs. Read back the configuration, then verify the model and options of the
+first run that actually starts; configuration alone does not prove execution.
+
+After a crash or restart, list cancelled and interrupted runs and reconcile each
+input as reprocessed or re-sent. Check artifacts and ledger records written near
+the failure for truncation or malformed content before relying on them.
 
 ## Finish delivery and clean up responsibly
 
@@ -88,3 +109,8 @@ done. Before removing a checkout or artifact, reconcile ownership and retain
 unique source, unpushed commits and required evidence in a durable location.
 Use the project's existing cleanup controls and permissions. Do not remove
 another task's work or broaden cleanup merely to make a workspace look tidy.
+
+Before changing a classification such as an ignore or exclude rule, check every
+consumer. Hiding artifacts from change detection can make an evidence-bearing
+checkout appear clean. Land the classification change and protection in every
+cleanup path together.
