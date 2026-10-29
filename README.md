@@ -46,9 +46,9 @@ one proof of the others or treat an unavailable check as a pass.
 When using a manager/executor arrangement, the manager delegates implementation,
 debugging, verification and multi-step investigations to scoped executors, even
 when only one runs. The manager remains responsible for intent, integration and
-delivery. Prefer a cheaper delegated model when it can meet the acceptance
-criteria, and keep manager turns short enough to stay responsive. Give the
-executor the acceptance criteria, allowed files, relevant context, constraints
+delivery. Follow the project's provider policy, acceptance thresholds and
+model-selection order. Keep manager turns short enough to stay responsive. Give
+the executor the acceptance criteria, allowed files, relevant context, constraints
 and expected return artifacts. Select an authorized provider, model and options
 for the work, and record the effective selection rather than assuming it.
 
@@ -62,8 +62,8 @@ For example, a documentation change and an isolated parser fix can run together
 with separate file ownership. Two changes to the same parser need coordination.
 Prefer finishing landable work over accumulating speculative drafts.
 
-Steer corrections into running work. A scope or safety amendment queued behind
-the current turn cannot constrain that turn; verify the executor received it.
+Queue routine corrections. For an authorized urgent scope or safety correction,
+steer it into running work, state why and verify receipt.
 
 ## Preserve context and unfinished work
 
@@ -91,16 +91,18 @@ them as requests in chat. At handoffs, use a close-out register:
 `item | owner | tracking | done when`.
 
 Check the agent host's free disk space and the orchestrator's health before a
-handoff. Save the durable brief first, switch the execution managers next and
-the outgoing coordinator last. Record a verification at each step.
+handoff. For a coordinated manager rotation, save the brief first, verify each
+manager switch and rotate the outgoing coordinator last.
 
 Before changing a thread's configuration, ensure it has no running or queued
 runs. Read back the configuration, then verify the model and options of the
 first run that actually starts; configuration alone does not prove execution.
 
-After a crash or restart, list cancelled and interrupted runs and reconcile each
-input as reprocessed or re-sent. Check artifacts and ledger records written near
-the failure for truncation or malformed content before relying on them.
+After a crash or restart, list cancelled and interrupted runs. Reconcile
+interrupted inputs and effects before retrying; retain unknown outcomes and
+record replacement receipts when replay is needed. Check artifacts and ledger
+records written near the failure for truncation or malformed content before
+relying on them.
 
 ## Finish delivery and clean up responsibly
 
