@@ -35,6 +35,7 @@ Access classes describe the cataloged route, independently of reuse rights:
 - **owner-provided**: ask the owner for an authorized private copy. Its URL cell
   says only `owner-provided`; availability is not promised on another host. This
   classification preserves the supplied route even if another legal route exists.
+- **university-library available**: available through a university library; reuse rights are separate.
 
 Licence descriptions preserve acquisition-record limits: **expected** and
 **unverified** are not verified grants. Check the exact acquired version before
@@ -50,7 +51,7 @@ nearest course context is explicit rather than inventing a course match.
 
 | KA | York course context | Chosen sources; substitutes | When to reach for it; general chapter pointers |
 | --- | --- | --- | --- |
-| 1. Software Requirements | EECS 4312, Software Engineering Requirements | S02; substitute S01 ch. 1 | Elicit goals, resolve obstacles and make criteria measurable. S02 goal modeling and requirements elaboration chapters; S01 ch. 1. |
+| 1. Software Requirements | EECS 4312, Software Engineering Requirements | S41 primary; S02 deferred paid alternative; substitute S01 ch. 1 | Elicit goals, resolve obstacles and make criteria measurable. S41 for requirements practice; S02 goal modeling and requirements elaboration chapters; S01 ch. 1. |
 | 2. Software Architecture | EECS 3311 Software Design; EECS 4314 Advanced Software Engineering | S40 and S01 ch. 2; substitute S13 for local pattern choices | Compare component boundaries and architectural trade-offs. S40 Berkeley DB and LLVM chapters; S13 Component and Event Queue chapters. |
 | 3. Software Design | EECS 3311 | S12; substitutes S13 and S01 ch. 3 | Model domain boundaries and invalid states before implementation. S12 Domain Modeling with Types and Modeling Workflows as Pipelines; S13 State and Component. |
 | 4. Software Construction | EECS 2011 Fundamentals of Data Structures; EECS 3311 | S09 and S15; substitutes S13 and S01 ch. 4 | Choose maintainable implementation and data structures. S09 Code Review, Documentation and Build Systems; S15 lists, hashing and graph chapters. |
@@ -96,7 +97,7 @@ The private-library format is [specified separately](private-library.md).
 | ID | Title; authors/editors | Edition/version; year | Access | Official URL | Licence / acquisition limit |
 | --- | --- | --- | --- | --- | --- |
 | S01 | Guide to the Software Engineering Body of Knowledge; Hironori Washizaki (ed.), IEEE Computer Society | v4.0a; v4 first published 2024; supplied revision date unverified | owner-provided | owner-provided | IEEE copyright; private supplied copy. Free account-based access does not imply a reuse licence. |
-| S02 | Requirements Engineering: From System Goals to UML Models to Software Specifications; Axel van Lamsweerde | 1st ed.; 2009 | paid | [Wiley](https://www.wiley.com/en-us/Requirements+Engineering%3A+From+System+Goals+to+UML+Models+to+Software+Specifications-p-9780470012703) | Publisher copyright; purchase/loan terms, no open reuse grant established. Paid; not held; buy/library/substitute decision pending. |
+| S02 | Requirements Engineering: From System Goals to UML Models to Software Specifications; Axel van Lamsweerde | 1st ed.; 2009 | paid | [Wiley](https://www.wiley.com/en-us/Requirements+Engineering%3A+From+System+Goals+to+UML+Models+to+Software+Specifications-p-9780470012703) | Publisher copyright; purchase/loan terms, no open reuse grant established. Paid; not held; deferred (revisit at ladder plateau); substitute: Wiegers & Beatty. |
 | S03 | Specifying Systems; Leslie Lamport | 1st ed.; 2002; author PDF revision 2008 | open | [Author](https://lamport.azurewebsites.net/tla/book.html) | Pearson copyright; author page permits personal use, other reproduction/distribution needs permission. |
 | S04 | Modeling in Event-B: System and Software Engineering; Jean-Raymond Abrial | 1st ed.; 2010 | owner-provided | owner-provided | Publisher copyright; purchase/loan terms, no open reuse grant established. |
 | S05 | Engineering a Safer World; Nancy G. Leveson | 1st ed.; 2012 | owner-provided | owner-provided | CC BY-NC-ND 4.0 identified in supplied publisher-licence record; exact supplied-byte/version match unverified. |
@@ -122,19 +123,24 @@ The private-library format is [specified separately](private-library.md).
 | S25 | Artificial Intelligence: A Modern Approach; Stuart Russell and Peter Norvig | 4th US ed.; 2021 | owner-provided | owner-provided | Pearson copyright; purchase/loan terms. Free companion materials do not supply the full book. |
 | S26 | Convex Optimization; Stephen Boyd and Lieven Vandenberghe | 1st ed.; 2004; private reading record used seventh printing with corrections, 2009 | open | [Authors](https://web.stanford.edu/~boyd/cvxbook/) | Cambridge copyright; author hosting permitted by publisher; no open redistribution grant established. |
 | S27 | Algorithms for Optimization; Mykel J. Kochenderfer and Tim A. Wheeler | 1st ed.; 2019; select first-edition download, not second-edition preview | open | [Authors](https://algorithmsbook.com/optimization/) | Author page identifies CC BY-NC-ND for shared PDFs; record exact deed/version at acquisition. |
-| S28 | AI for Games; Ian Millington | 3rd ed.; 2019 | owner-provided | owner-provided | Publisher copyright; purchase/loan terms, no open reuse grant established. |
+| S28 | AI for Games; Ian Millington | 2022 printing (publication statement: 1st ed.; catalogued as 4th ed.) | owner-provided | owner-provided | Publisher copyright; purchase/loan terms, no open reuse grant established. |
 | S29 | Mathematics for Computer Science; Eric Lehman, F. Thomson Leighton and Albert R. Meyer | MIT 6.042 Spring 2018 revision | open | [MIT course source](https://courses.csail.mit.edu/6.042/spring18/mcs.pdf) | CC BY-SA 3.0 US expected in acquisition record; verify exact revision's notice. |
 | S30 | forall x: Calgary; P. D. Magnus, Tim Button, J. Robert Loftis, Aaron Thomas-Bolduc and Richard Zach | Calgary rolling edition; select dated release at acquisition | open | [Open Logic Project](https://forallx.openlogicproject.org/) | CC BY 4.0; verify exceptions and exact release credits. |
 | S31 | Linear Algebra Done Right; Sheldon Axler | 4th ed.; 2024 | open | [Author](https://linear.axler.net/) | CC BY-NC 4.0 expected in acquisition record; verify selected file. |
 | S32 | Operating Systems: Three Easy Pieces; Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau | v1.10; 2023 | open | [Authors](https://pages.cs.wisc.edu/~remzi/OSTEP/) | Author copyright; free individual chapter PDFs, paid convenience compilation. No broad reuse grant established here. |
 | S33 | Computer Networks: A Systems Approach; Larry L. Peterson and Bruce S. Davie | 6th ed.; 2021; dated online revision required | open | [Author project](https://book.systemsapproach.org/) | CC BY 4.0 expected for online text; verify selected release and third-party exceptions. |
 | S34 | Readings in Database Systems; Peter Bailis, Joseph M. Hellerstein and Michael Stonebraker (eds.) | 5th ed.; 2015 | owner-provided | owner-provided | Editorial material CC BY-NC-SA 4.0 in supplied record; individual readings retain their own rights. The companion reading list is not a full-text paper corpus. |
-| S35 | Designing Data-Intensive Applications; Martin Kleppmann | 1st ed.; 2017 | owner-provided | owner-provided | O'Reilly copyright; purchase/loan terms, no open reuse grant established. |
+| S35 | Designing Data-Intensive Applications; Martin Kleppmann and Chris Riccomini | 2nd ed.; 2026 | owner-provided | owner-provided | O'Reilly copyright; purchase/loan terms, no open reuse grant established. |
 | S36 | Security Engineering; Ross Anderson | 3rd ed.; 2020 | open | [Author archive](https://www.cl.cam.ac.uk/archive/rja14/book.html) | Authorized free chapter/full-book downloads; publisher copyright, no open reuse grant established here. |
 | S37 | Mathematics for Machine Learning; Marc Peter Deisenroth, A. Aldo Faisal and Cheng Soon Ong | 1st ed.; 2020; dated PDF revision required | open | [Authors](https://mml-book.github.io/) | Cambridge copyright; author PDF available, licence unknown in acquisition ledger. |
 | S38 | Pattern Recognition and Machine Learning; Christopher M. Bishop | 1st ed.; 2006 | owner-provided | owner-provided | Springer copyright, all rights reserved in supplied record; official free availability is not a CC reuse licence; exact supplied-byte match unverified. |
 | S39 | Dive into Deep Learning; Aston Zhang, Zachary C. Lipton, Mu Li and Alexander J. Smola | 2023 published edition; dated online revision required | open | [Authors](https://d2l.ai/) | Text CC BY-SA 4.0; sample and reference code under the authors' modified MIT licence (LICENSE-SAMPLECODE); verify the selected version and third-party exceptions. |
 | S40 | The Architecture of Open Source Applications; Amy Brown and Greg Wilson (eds.) | Volume 1; 2011 | open | [Editors' project](https://aosabook.org/en/) | Text CC BY 3.0; verify chapter exceptions and separate code terms. |
+| S41 | Software Requirements; Karl Wiegers and Joy Beatty | 3rd ed.; 2013; Microsoft Press | owner-provided | owner-provided | Publisher copyright; purchase/loan terms, no open reuse grant established. |
+| S42 | Software Requirements: Styles and Techniques; Søren Lauesen | 2002; Addison-Wesley | university-library available | — | Reuse terms unverified. |
+| S43 | Agile Software Requirements; Dean Leffingwell | 2010; Addison-Wesley | university-library available | — | Reuse terms unverified. |
+| S44 | Requirements Engineering for Software and Systems; Phillip A. Laplante and Mohamad Kassab | 4th ed.; 2022; CRC Press | university-library available | [Publisher](https://www.routledge.com/Requirements-Engineering-for-Software-and-Systems/Laplante-Kassab/p/book/9781032275994) | Reuse terms unverified. |
+| S45 | Applying UML and Patterns; Craig Larman | 3rd ed.; 2004; Prentice Hall | university-library available | — | Reuse terms unverified. |
 
 ## Maintaining this bibliography
 
