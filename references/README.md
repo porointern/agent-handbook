@@ -35,6 +35,7 @@ Access classes describe the cataloged route, independently of reuse rights:
 - **owner-provided**: ask the owner for an authorized private copy. Its URL cell
   says only `owner-provided`; availability is not promised on another host. This
   classification preserves the supplied route even if another legal route exists.
+- **university-library available**: available through a university library; reuse rights are separate.
 
 Licence descriptions preserve acquisition-record limits: **expected** and
 **unverified** are not verified grants. Check the exact acquired version before
@@ -50,7 +51,7 @@ nearest course context is explicit rather than inventing a course match.
 
 | KA | York course context | Chosen sources; substitutes | When to reach for it; general chapter pointers |
 | --- | --- | --- | --- |
-| 1. Software Requirements | EECS 4312, Software Engineering Requirements | S02; substitute S01 ch. 1 | Elicit goals, resolve obstacles and make criteria measurable. S02 goal modeling and requirements elaboration chapters; S01 ch. 1. |
+| 1. Software Requirements | EECS 4312, Software Engineering Requirements | S41 primary; S02 deferred paid alternative; substitute S01 ch. 1 | Elicit goals, resolve obstacles and make criteria measurable. S41 for requirements practice; S02 goal modeling and requirements elaboration chapters; S01 ch. 1. |
 | 2. Software Architecture | EECS 3311 Software Design; EECS 4314 Advanced Software Engineering | S40 and S01 ch. 2; substitute S13 for local pattern choices | Compare component boundaries and architectural trade-offs. S40 Berkeley DB and LLVM chapters; S13 Component and Event Queue chapters. |
 | 3. Software Design | EECS 3311 | S12; substitutes S13 and S01 ch. 3 | Model domain boundaries and invalid states before implementation. S12 Domain Modeling with Types and Modeling Workflows as Pipelines; S13 State and Component. |
 | 4. Software Construction | EECS 2011 Fundamentals of Data Structures; EECS 3311 | S09 and S15; substitutes S13 and S01 ch. 4 | Choose maintainable implementation and data structures. S09 Code Review, Documentation and Build Systems; S15 lists, hashing and graph chapters. |
@@ -96,7 +97,7 @@ The private-library format is [specified separately](private-library.md).
 | ID | Title; authors/editors | Edition/version; year | Access | Official URL | Licence / acquisition limit |
 | --- | --- | --- | --- | --- | --- |
 | S01 | Guide to the Software Engineering Body of Knowledge; Hironori Washizaki (ed.), IEEE Computer Society | v4.0a; v4 first published 2024; supplied revision date unverified | owner-provided | owner-provided | IEEE copyright; private supplied copy. Free account-based access does not imply a reuse licence. |
-| S02 | Requirements Engineering: From System Goals to UML Models to Software Specifications; Axel van Lamsweerde | 1st ed.; 2009 | paid | [Wiley](https://www.wiley.com/en-us/Requirements+Engineering%3A+From+System+Goals+to+UML+Models+to+Software+Specifications-p-9780470012703) | Publisher copyright; purchase/loan terms, no open reuse grant established. Paid; not held; buy/library/substitute decision pending. |
+| S02 | Requirements Engineering: From System Goals to UML Models to Software Specifications; Axel van Lamsweerde | 1st ed.; 2009 | paid | [Wiley](https://www.wiley.com/en-us/Requirements+Engineering%3A+From+System+Goals+to+UML+Models+to+Software+Specifications-p-9780470012703) | Publisher copyright; purchase/loan terms, no open reuse grant established. Paid; not held; deferred (revisit at ladder plateau); substitute: Wiegers & Beatty. |
 | S03 | Specifying Systems; Leslie Lamport | 1st ed.; 2002; author PDF revision 2008 | open | [Author](https://lamport.azurewebsites.net/tla/book.html) | Pearson copyright; author page permits personal use, other reproduction/distribution needs permission. |
 | S04 | Modeling in Event-B: System and Software Engineering; Jean-Raymond Abrial | 1st ed.; 2010 | owner-provided | owner-provided | Publisher copyright; purchase/loan terms, no open reuse grant established. |
 | S05 | Engineering a Safer World; Nancy G. Leveson | 1st ed.; 2012 | owner-provided | owner-provided | CC BY-NC-ND 4.0 identified in supplied publisher-licence record; exact supplied-byte/version match unverified. |
@@ -135,6 +136,11 @@ The private-library format is [specified separately](private-library.md).
 | S38 | Pattern Recognition and Machine Learning; Christopher M. Bishop | 1st ed.; 2006 | owner-provided | owner-provided | Springer copyright, all rights reserved in supplied record; official free availability is not a CC reuse licence; exact supplied-byte match unverified. |
 | S39 | Dive into Deep Learning; Aston Zhang, Zachary C. Lipton, Mu Li and Alexander J. Smola | 2023 published edition; dated online revision required | open | [Authors](https://d2l.ai/) | Text CC BY-SA 4.0; sample and reference code under the authors' modified MIT licence (LICENSE-SAMPLECODE); verify the selected version and third-party exceptions. |
 | S40 | The Architecture of Open Source Applications; Amy Brown and Greg Wilson (eds.) | Volume 1; 2011 | open | [Editors' project](https://aosabook.org/en/) | Text CC BY 3.0; verify chapter exceptions and separate code terms. |
+| S41 | Software Requirements; Karl Wiegers and Joy Beatty | 3rd ed.; 2013; Microsoft Press | owner-provided | owner-provided | Publisher copyright; purchase/loan terms, no open reuse grant established. |
+| S42 | Software Requirements: Styles and Techniques; Søren Lauesen | 2002; Addison-Wesley | university-library available | — | Reuse terms unverified. |
+| S43 | Agile Software Requirements; Dean Leffingwell | 2010; Addison-Wesley | university-library available | — | Reuse terms unverified. |
+| S44 | Requirements Engineering for Software and Systems; Phillip A. Laplante and Mohamad Kassab | 4th ed.; 2022; CRC Press | university-library available | [Publisher](https://www.routledge.com/Requirements-Engineering-for-Software-and-Systems/Laplante-Kassab/p/book/9781032275994) | Reuse terms unverified. |
+| S45 | Applying UML and Patterns; Craig Larman | 3rd ed.; 2004; Prentice Hall | university-library available | — | Reuse terms unverified. |
 
 ## Maintaining this bibliography
 
