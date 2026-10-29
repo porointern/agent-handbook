@@ -140,7 +140,7 @@ The private-library format is [specified separately](private-library.md).
 | S42 | Software Requirements: Styles and Techniques; Søren Lauesen | 2002; Addison-Wesley | university-library available | — | Reuse terms unverified. |
 | S43 | Agile Software Requirements; Dean Leffingwell | 2010; Addison-Wesley | university-library available | — | Reuse terms unverified. |
 | S44 | Requirements Engineering for Software and Systems; Phillip A. Laplante and Mohamad Kassab | 4th ed.; 2022; CRC Press | university-library available | [Publisher](https://www.routledge.com/Requirements-Engineering-for-Software-and-Systems/Laplante-Kassab/p/book/9781032275994) | Reuse terms unverified. |
-| S45 | Applying UML and Patterns; Craig Larman | 3rd ed.; 2004; Prentice Hall | university-library available | — | Reuse terms unverified. |
+| S45 | Applying UML and Patterns; Craig Larman | 3rd ed.; 2004 publication, 2005 copyright; Prentice Hall | university-library available | — | Reuse terms unverified. |
 
 ## Maintaining this bibliography
 
