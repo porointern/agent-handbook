@@ -10,6 +10,14 @@ revision using the [adoption guide](ADOPTION.md). A handbook update does not cha
 that selection or grant access. Written guidance is not mechanical enforcement:
 only an identified, verified project control can establish what a tool prevents.
 
+## Find engineering references
+
+The [reference catalog](references/README.md) organizes textbooks and substitutes
+by SWEBOK v4 knowledge area and autonomous-agent field, with editions, access,
+licences and general chapter pointers. The [private-library format](references/private-library.md)
+lets a host record lawful acquisitions without publishing books or host inventories.
+Project-specific chapter maps and decisions remain in their owning projects.
+
 ## Communicate clearly
 
 Lead with what changed or what needs a decision. Use plain language, concrete
